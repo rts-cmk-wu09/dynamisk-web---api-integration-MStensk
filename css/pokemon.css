@@ -1,0 +1,26 @@
+body{
+    font-size: 1.4em;
+}
+.abilities{
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    margin-bottom: 0.5em;
+}
+li{
+    border-bottom: 2px solid black;
+}
+.stats{
+     font-weight: 700;
+     margin-bottom: 0.5em;
+     border-bottom: 2px solid black;
+}
+img{
+    width: 40%;
+    height: auto;
+}
+figure{
+    margin: 4em auto;
+  border: 2px solid black;
+  width: 400px;
+  background-color: white;
+}
