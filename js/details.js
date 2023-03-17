@@ -1,15 +1,17 @@
 const params = new URLSearchParams(document.location.search);
 var id = params.get("id");
-
+const body = document.querySelector("body");
 
 fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
 .then ((res) =>{
  return res.json();
 }).then(data => {
+
     console.log(data)
     console.log(data.abilities[0].ability)
     document.querySelector("body").innerHTML += `
         <section>
+            <a id="home" href ="/index.html">HOME</a>
             <figure>
             <h1 class ="pokemon">${data.name}</h1>
             <img src="${data.sprites.front_default}" alt="image">
@@ -32,5 +34,11 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
         </section>
         <footer><p>page number: ${id} of 20</p></footer>
         `;
+        //const atag = document.createElement("a");
+
+        //atag.innerHTML = `<a id="next" href ="/pokemon.html?id=${data}">Next</a>`
+        //atag.addEventListener("click", changeSlide);
+        //body.append(atag);
+
 });
 
