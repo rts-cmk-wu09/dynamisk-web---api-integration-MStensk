@@ -1,0 +1,14 @@
+{
+  "name": "axios",
+  "version": "1.0.0",
+  "description": "axios",
+  "main": "index.js",
+  "scripts": {
+    "test": "deez"
+  },
+  "author": "deez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4"
+  }
+}
